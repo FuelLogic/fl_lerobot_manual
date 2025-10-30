@@ -14,7 +14,7 @@
 
 ## ⚙️ Installation Steps
 
-### 1️⃣ 기본 패키지 설치
+### 1. 기본 패키지 설치
 ```bash
 sudo apt install python3-pip
 ```
@@ -22,7 +22,7 @@ sudo apt install python3-pip
 
 ---
 
-### 2️⃣ Miniconda 폴더 생성
+### 2. Miniconda 폴더 생성
 ```bash
 mkdir miniconda
 ```
@@ -30,7 +30,7 @@ mkdir miniconda
 
 ---
 
-### 3️⃣ Miniconda 다운로드
+### 3. Miniconda 다운로드
 ```bash
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 ```
@@ -38,7 +38,7 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
 ---
 
-### 4️⃣ Miniconda 설치 실행
+### 4. Miniconda 설치 실행
 ```bash
 bash ~/Miniconda3-latest-Linux-x86_64.sh
 ```
@@ -46,7 +46,7 @@ bash ~/Miniconda3-latest-Linux-x86_64.sh
 
 ---
 
-### 5️⃣ 환경 변수 업데이트
+### 5. 환경 변수 업데이트
 ```bash
 source ~/.bashrc
 ```
@@ -54,7 +54,7 @@ source ~/.bashrc
 
 ---
 
-### 6️⃣ LeRobot용 가상환경 생성
+### 6. LeRobot용 가상환경 생성
 ```bash
 conda create -y -n lerobot python=3.10
 ```
@@ -62,7 +62,7 @@ conda create -y -n lerobot python=3.10
 
 ---
 
-### 7️⃣ 8️⃣ Conda 약관 승인
+### 7. 8. Conda 약관 승인
 ```bash
 conda tos accept --override-channel https://repo.anaconda.com/pkgs/main
 conda tos accept --override-channel https://repo.anaconda.com/pkgs/r
@@ -71,15 +71,15 @@ conda tos accept --override-channel https://repo.anaconda.com/pkgs/r
 
 ---
 
-### 9️⃣ 가상환경 재생성 (필요 시)
+### 9️. 가상환경 재생성 (필요 시)
 ```bash
 conda create -y -n lerobot python=3.10
 ```
-👉 7️⃣8️⃣약관 승인을 진행한 경우, 환경 설정을 다시 재생성합니다.
+👉 7,8 약관 승인을 진행한 경우, 환경 설정을 다시 재생성합니다.
 
 ---
 
-### 🔟 가상환경 활성화
+### 10. 가상환경 활성화
 ```bash
 conda activate lerobot
 ```
@@ -87,7 +87,7 @@ conda activate lerobot
 
 ---
 
-### 11️⃣ FFmpeg 설치
+### 11. FFmpeg 설치
 ```bash
 conda install ffmpeg -c conda-forge
 ```
@@ -95,7 +95,7 @@ conda install ffmpeg -c conda-forge
 
 ---
 
-### 12️⃣ 상위 폴더로 이동
+### 12. 상위 폴더로 이동
 ```bash
 cd ..
 ```
@@ -103,7 +103,7 @@ cd ..
 
 ---
 
-### 13️⃣ LeRobot 리포지토리 클론
+### 13. LeRobot 리포지토리 클론
 ```bash
 git clone https://github.com/huggingface/lerobot.git
 ```
@@ -111,7 +111,7 @@ git clone https://github.com/huggingface/lerobot.git
 
 ---
 
-### 14️⃣ 폴더 이동
+### 14. 폴더 이동
 ```bash
 cd lerobot
 ```
@@ -119,7 +119,7 @@ cd lerobot
 
 ---
 
-### 15️⃣ 개발자 모드 설치
+### 15. 개발자 모드 설치
 ```bash
 pip install -e .
 ```
@@ -127,7 +127,7 @@ pip install -e .
 
 ---
 
-### 16️⃣ LeRobot 설치
+### 16. LeRobot 설치
 ```bash
 pip install lerobot
 ```
@@ -135,7 +135,7 @@ pip install lerobot
 
 ---
 
-### 17️⃣ 필수 빌드 도구 설치
+### 17. 필수 빌드 도구 설치
 ```bash
 sudo apt-get install cmake build-essential python3-dev pkg-config libavformat-dev libavcodec-dev libavdevice-dev libavutil-dev libswscale-dev libswresample-dev libavfilter-dev pkg-config
 ```
@@ -143,7 +143,7 @@ sudo apt-get install cmake build-essential python3-dev pkg-config libavformat-de
 
 ---
 
-### 18️⃣ Feetech 서보모터 지원 설치
+### 18. Feetech 서보모터 지원 설치
 ```bash
 pip install -e ".[feetech]"
 ```
