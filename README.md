@@ -1,6 +1,3 @@
-# fl_lerobot_manual
-르로봇 메뉴얼
-
 # 🦾 LeRobot Manual (르로봇 메뉴얼)
 
 ## 📺 YouTube Link  
@@ -78,7 +75,7 @@ conda tos accept --override-channel https://repo.anaconda.com/pkgs/r
 ```bash
 conda create -y -n lerobot python=3.10
 ```
-👉 혹시 환경 설정이 꼬였을 경우 재생성합니다.
+👉 7️⃣8️⃣약관 승인을 진행한 경우, 환경 설정을 다시 재생성합니다.
 
 ---
 
@@ -160,4 +157,4 @@ pip install -e ".[feetech]"
 
 ## 📜 참고
 - 공식 GitHub: [https://github.com/huggingface/lerobot](https://github.com/huggingface/lerobot)  
-- Hugging Face Docs: [https://huggingface.co/docs/lerobot](https://huggingface.co/docs/lerobot)
+- Hugging Face Install: [https://huggingface.co/docs/lerobot](https://huggingface.co/docs/lerobot/installation)
