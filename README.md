@@ -22,9 +22,11 @@ sudo apt install python3-pip
 
 ---
 
-### 2. Miniconda 폴더 생성
+### 2. Miniconda 폴더 생성 및 이동
 ```bash
 mkdir miniconda
+ls
+cd miniconda
 ```
 👉 Miniconda 설치 파일을 저장할 폴더를 만듭니다.
 
@@ -40,7 +42,7 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
 ### 4. Miniconda 설치 실행
 ```bash
-bash ~/Miniconda3-latest-Linux-x86_64.sh
+bash ~/miniconda/Miniconda3-latest-Linux-x86_64.sh
 ```
 👉 다운로드한 설치 스크립트를 실행합니다.
 
@@ -137,7 +139,7 @@ pip install lerobot
 
 ### 17. 필수 빌드 도구 설치
 ```bash
-sudo apt-get install cmake build-essential python3-dev pkg-config libavformat-dev libavcodec-dev libavdevice-dev libavutil-dev libswscale-dev libswresample-dev libavfilter-dev pkg-config
+sudo apt-get install cmake build-essential python3-dev pkg-config libavformat-dev libavcodec-dev libavdevice-dev libavutil-dev libswscale-dev libswresample-dev libavfilter-dev
 ```
 👉 LeRobot 실행에 필요한 영상/오디오/빌드 관련 라이브러리들을 설치합니다.
 
